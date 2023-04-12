@@ -1,0 +1,11 @@
+In Python you can write human readable code.
+In Python you can write code that runs X-platform.
+In Python you can do more by writing less.
+In Python you can make use of the rich libraries provided.
+In Python you can seek help from the ever growing community.
+In Python you can use any of the specific libraries for Math.
+In Python you can read from files.
+In Python you can write to files.
+In Python you can define classes.
+In Python you can write scripts executed by the interpreter.
+In Python you can compile programs.
