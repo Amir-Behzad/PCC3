@@ -5,10 +5,10 @@ path = Path('learning_python.txt')
 content = path.read_text()
 
 print("The content of the file:",
-      f"\n{content}")
+  f"\n{content}")
 
 
 lines = content.splitlines()
 print("\nLines:")
 for line in lines:
-    print(line)
+  print(line)
