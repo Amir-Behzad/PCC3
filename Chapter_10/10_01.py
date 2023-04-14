@@ -8,7 +8,7 @@ print("The content of the file:",
   f"\n{content}")
 
 
-lines = content.splitlines()
+# lines = content.splitlines()
 print("\nLines:")
-for line in lines:
+for line in content.splitlines():
   print(line)
