@@ -1,9 +1,10 @@
 from pathlib import Path
 
 path = Path('./Chapter_10/programming.txt')
-content = "I love programming."
-content += "\nMore text."
-path.write_text(content)
+contents = "I love programming."
+contents += "\nMore text."
+contents += "I also love working with data.\n"
+path.write_text(contents)
 
-content = path.read_text()
-print(content)
+contents = path.read_text()
+print(contents)
