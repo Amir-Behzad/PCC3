@@ -1,6 +1,6 @@
 nums = list(range(1, 11))
-cubes = []
 
+cubes = []
 for num in nums:
     cube = num**3
     cubes.append(cube)
