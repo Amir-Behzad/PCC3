@@ -4,9 +4,9 @@ path = Path('learning_python.txt')
 
 contents = path.read_text()
 
-print("Contents:", contents)
+print("\nContents:", f"\n{contents}")
 
 modified_contents = contents.replace("Python", "C")
-print("New Contents:", modified_contents)
+print("\nNew Contents:", f"\n{modified_contents}")
 
-print("Original Contents:", contents)
+print("\nOriginal Contents:", f"\n{contents}")
