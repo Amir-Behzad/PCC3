@@ -1,7 +1,9 @@
+print('Type two numbers to get the sum of them.')
+first_number = input("First number: ")
+second_number = input("Second number: ")
+
 try:
-    first_number = int(input("Please type the first number: "))
-    second_number = int(input("Please type the second number: "))
-    sum = first_number + second_number
+    sum = int(first_number) + int(second_number)
     print(
         f"\n{first_number} + {second_number} =",
         sum,
@@ -9,4 +11,4 @@ try:
     )
 
 except ValueError:
-    print("Please type a proper number")
+    print("Please type valid numbers.")
