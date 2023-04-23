@@ -8,5 +8,5 @@ try:
         "\n"
     )
 
-except:
+except ValueError:
     print("Please type a proper number")
