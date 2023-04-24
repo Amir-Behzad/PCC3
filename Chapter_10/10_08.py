@@ -1,7 +1,9 @@
 from pathlib import Path
 
+print()
+
 try:
-  cats_path = Path('./cat.txt')
+  cats_path = Path('./cats.txt')
   cats = cats_path.read_text().splitlines()
 
   for cat in cats:
@@ -9,6 +11,8 @@ try:
   
 except FileNotFoundError:
   print('\nFile not found for cats.\n')
+  
+print()
   
 try:
   dogs_path = Path('./dogs.txt')
@@ -20,3 +24,4 @@ try:
 except FileNotFoundError:
   print('\nFile not found for dogs.\n')
   
+print()
