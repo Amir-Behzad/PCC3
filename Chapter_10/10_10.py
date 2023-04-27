@@ -24,4 +24,4 @@ try:
         just_the_count
     )
 except FileNotFoundError:
-    print("File not found.")
+    print(f"Sorry, the file {path} does not exist.")
