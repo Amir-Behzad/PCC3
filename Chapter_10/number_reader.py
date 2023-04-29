@@ -10,6 +10,9 @@ print(
     numbers,
     
     '\nType of "Numbers":',
-    type(numbers)
+    type(numbers),
+    
+    '\nType of "contents":',
+    type(contents)
 
 )
