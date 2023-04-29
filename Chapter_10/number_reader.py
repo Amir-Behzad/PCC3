@@ -16,3 +16,10 @@ print(
     type(contents)
 
 )
+
+print()
+
+for item in numbers:
+    print(item)
+    
+print()
