@@ -1,7 +1,7 @@
 from pathlib import Path
 
 try:
-    path = Path('./qorran.txt')
+    path = Path('./qoran.txt')
 
     qoran_text = path.read_text()
 
@@ -10,13 +10,16 @@ try:
     just_the_count = qoran_text.lower().count('the ')
 
     print(
+        (3 * '\n'),
         "'The' counter:",
-        The_count
+        The_count,
     )
 
     print(
+        ('\n'),
         "'the' counter:",
-        the_count
+        the_count,
+        (3 * '\n'),
     )
 
     print(
