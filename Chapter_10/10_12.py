@@ -1,16 +1,39 @@
 from pathlib import Path
 import json
 
-path = Path('users.json')
-numbers_list = [2, 5, 1, 6, 3]
-content = json.dumps(numbers_list)
+
+prompt = "Type 'q' to exit\n"
+prompt += "Your favorite number: "
+numbers = []
+
+try:
+    path = Path('numbers.json')
+    content = path.read_text()
+    numbers = json.loads(content)
+    numbers = list(numbers)
+except FileNotFoundError:
+    print(f"Sorry, the file {path} does not exist.")
+
+
+while True:
+    number = input(prompt)
+    if number == "q":
+        break
+    else:
+        try:
+            number = int(number)
+            if number not in numbers:
+                numbers.append(number)
+            else:
+                print(f"{number} was already added.")
+        except:
+            print("wrong input.")
+
+content = json.dumps(numbers)
 path.write_text(content)
 
-contents = path.read_text()
-numbers = json.loads(contents)
 print('\nNumbers: ')
 for number in numbers:
     print(number)
     
 print()
-
