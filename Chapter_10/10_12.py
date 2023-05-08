@@ -1,14 +1,19 @@
 from pathlib import Path
 import json
 
-path = Path('numbers.json')
 
 prompt = "Type 'q' to exit\n"
 prompt += "Your favorite number: "
+numbers = []
 
-content = path.read_text()
-numbers = json.loads(content)
-numbers = list(numbers)
+try:
+    path = Path('numbers.json')
+    content = path.read_text()
+    numbers = json.loads(content)
+    numbers = list(numbers)
+except FileNotFoundError:
+    print(f"Sorry, the file {path} does not exist.")
+
 
 while True:
     number = input(prompt)
