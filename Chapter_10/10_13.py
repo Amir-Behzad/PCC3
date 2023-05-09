@@ -8,7 +8,8 @@ path = Path('users.json')
 contents = json.dumps(user)
 path.write_text(contents)
 
+contents = path.read_text()
+user_dictionary = json.loads(contents)
 
-print(
-  f"We'll remember you when you come back, {user['name']}."
-)
+for key, value in user.items():
+  print(f"User's {key.title()}: {value.title()}")
