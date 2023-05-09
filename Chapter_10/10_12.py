@@ -9,11 +9,12 @@ numbers = []
 try:
     path = Path('numbers.json')
     content = path.read_text()
-    numbers = json.loads(content)
-    numbers = list(numbers)
 except FileNotFoundError:
     print(f"Sorry, the file {path} does not exist.")
-
+else:
+    numbers = json.loads(content)
+    numbers = list(numbers)
+    
 
 while True:
     number = input(prompt)
