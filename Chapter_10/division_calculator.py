@@ -9,5 +9,8 @@ while True:
     second_number = input("Second number: ")
     if second_number == 'q':
         break
-    answer = int(first_number) / int(second_number)
-    print(answer)
+    try:
+        answer = int(first_number) / int(second_number)
+        print(answer)
+    except ZeroDivisionError:
+        print("Cannot devide by zero.")
