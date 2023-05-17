@@ -12,5 +12,5 @@ def count_words(path):
         num_words = len(words)
         print(f"The file {path} has about {num_words} words.")
         
-    path = Path('alice.txt')
-    count_words(path)
+path = Path('alice.txt')
+count_words(path)
