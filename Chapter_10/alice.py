@@ -7,4 +7,8 @@ except FileNotFoundError:
     print(f'{path} not found')
 
 else:
-    print(content)
+    # Count the approximate number of words in the file:
+    words = content.split()
+    num_words = len(words)
+    print(f"The file '{path}' has {num_words} words.")
+    
