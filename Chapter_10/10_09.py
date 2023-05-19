@@ -10,18 +10,17 @@ try:
       print("Cat's name:", cat)
   
 except FileNotFoundError:
-  print('\nFile not found for cats.\n')
+  pass
   
 print()
   
 try:
-  dogs_path = Path('./dogs.txt')
+  dogs_path = Path('./dog.txt')
   dogs = dogs_path.read_text().splitlines()
 
   for dog in dogs:
       print("Dog's name:", dog)
 
 except FileNotFoundError:
-  print('\nFile not found for dogs.\n')
-  
+  pass  
 print()
