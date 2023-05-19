@@ -18,8 +18,8 @@ filenames = [
     'qoran.txt',
     'alice.txt',
     'cats.txt',
+    'test.txt',
     'dogs.txt',
-    'test.txt'
 ]
 
 for filename in filenames:
