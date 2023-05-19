@@ -2,6 +2,7 @@ from pathlib import Path
 
 def count_words(path):
     """Count the approximate number of words in a file."""
+    
     try:
         contents = path.read_text(encoding='utf-8')
     except FileNotFoundError:
@@ -12,5 +13,15 @@ def count_words(path):
         num_words = len(words)
         print(f"\nThe file '{path}' has about {num_words} words.\n")
         
-path = Path('qoran.txt')
-count_words(path)
+        
+filenames = [
+    'qoran.txt',
+    'alice.txt',
+    'cats.txt',
+    'dogs.txt',
+    'test.txt'
+]
+
+for filename in filenames:
+    path = Path(filename)
+    count_words(path)
